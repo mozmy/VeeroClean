@@ -1,0 +1,1120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0b1730">
+<meta name="description" content="Vee-Ro Clean provides professional home cleaning, spring cleaning, deep cleaning and post-renovation cleaning in Klang, Shah Alam and Puncak Alam.">
+<title>Vee-Ro Clean | True Care. True Clean.</title>
+
+<style>
+:root {
+  --navy:#0b1730;
+  --navy2:#142747;
+  --gold:#d6a52d;
+  --gold-light:#f4d47b;
+  --cream:#f8f7f2;
+  --white:#fff;
+  --text:#263247;
+  --muted:#788397;
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html {scroll-behavior:smooth}
+
+body {
+  font-family:Arial,sans-serif;
+  background:var(--cream);
+  color:var(--text);
+  line-height:1.7;
+}
+
+a {
+  text-decoration:none;
+  color:inherit;
+}
+
+.container {
+  width:90%;
+  max-width:1180px;
+  margin:auto;
+}
+
+/* NAVIGATION */
+
+header {
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(11,23,48,.97);
+  border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+nav {
+  min-height:85px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.brand img {
+  display:block;
+  width:155px;
+  height:auto;
+  max-height:75px;
+  object-fit:contain;
+}
+
+.nav-links {
+  display:flex;
+  align-items:center;
+  gap:30px;
+  color:#e8eaf0;
+  font-size:14px;
+}
+
+.nav-links a:hover {color:var(--gold-light)}
+
+.nav-button {
+  background:var(--gold);
+  color:var(--navy);
+  padding:11px 20px;
+  border-radius:4px;
+  font-size:13px;
+  font-weight:bold;
+}
+
+/* HERO */
+
+.hero {
+  min-height:680px;
+  display:flex;
+  align-items:center;
+  background:
+    linear-gradient(90deg,rgba(7,17,37,.97),rgba(11,23,48,.78)),
+    radial-gradient(ellipse at 80% 40%,#35496a,transparent 65%);
+  color:white;
+  padding:100px 0;
+}
+
+.hero-content {max-width:760px}
+
+.eyebrow {
+  color:var(--gold-light);
+  font-size:12px;
+  letter-spacing:4px;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+
+.hero h1 {
+  font-family:Georgia,serif;
+  font-size:clamp(42px,7vw,76px);
+  line-height:1.12;
+  font-weight:normal;
+  margin:25px 0;
+}
+
+.hero h1 span {color:var(--gold-light)}
+
+.hero p {
+  color:#d2d9e4;
+  max-width:620px;
+  font-size:17px;
+  margin-bottom:32px;
+}
+
+.button {
+  display:inline-block;
+  background:var(--gold);
+  color:var(--navy);
+  padding:14px 25px;
+  font-size:13px;
+  font-weight:bold;
+  border-radius:4px;
+  transition:.25s;
+}
+
+.button:hover {
+  background:var(--gold-light);
+  transform:translateY(-3px);
+}
+
+.button-outline {
+  background:transparent;
+  border:1px solid var(--gold);
+  color:var(--gold-light);
+  margin-left:10px;
+}
+
+/* TRUST BAR */
+
+.trust {
+  background:var(--gold);
+  color:var(--navy);
+  padding:17px 0;
+  text-align:center;
+  font-size:12px;
+  letter-spacing:2px;
+  font-weight:bold;
+}
+
+/* SECTIONS */
+
+section {padding:90px 0}
+
+.section-title {
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.section-title small {
+  color:#ae8120;
+  font-size:11px;
+  letter-spacing:3px;
+  font-weight:bold;
+}
+
+.section-title h2 {
+  color:var(--navy);
+  font-family:Georgia,serif;
+  font-size:clamp(30px,4vw,43px);
+  font-weight:normal;
+  margin:10px 0;
+}
+
+.section-title p {
+  color:var(--muted);
+  font-size:15px;
+}
+
+/* ABOUT */
+
+.about-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.about-visual {
+  min-height:390px;
+  background:linear-gradient(145deg,#0b1730,#263e62);
+  border-radius:6px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:35px;
+  text-align:center;
+  color:white;
+}
+
+.about-visual img {
+  width:100%;
+  max-width:290px;
+  height:auto;
+  object-fit:contain;
+}
+
+.about-copy h2 {
+  font-family:Georgia,serif;
+  font-size:39px;
+  color:var(--navy);
+  line-height:1.2;
+  font-weight:normal;
+  margin:12px 0 20px;
+}
+
+.about-copy p {
+  color:var(--muted);
+  margin-bottom:17px;
+}
+
+.gold-line {
+  width:65px;
+  height:3px;
+  background:var(--gold);
+  margin:20px 0;
+}
+
+/* SERVICES */
+
+.services {background:#fff}
+
+.services-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.service-card {
+  background:var(--cream);
+  border:1px solid #eee8d9;
+  padding:32px 27px;
+  transition:.25s;
+  border-radius:5px;
+}
+
+.service-card:hover {
+  transform:translateY(-5px);
+  border-color:var(--gold);
+}
+
+.service-icon {
+  font-size:30px;
+  margin-bottom:17px;
+}
+
+.service-card h3 {
+  color:var(--navy);
+  font-family:Georgia,serif;
+  font-size:21px;
+  margin-bottom:10px;
+}
+
+.service-card p {
+  font-size:14px;
+  color:var(--muted);
+}
+
+/* PACKAGES */
+
+.packages-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.package-card {
+  background:white;
+  border:1px solid #e8e3d8;
+  padding:32px 27px;
+  border-radius:5px;
+  display:flex;
+  flex-direction:column;
+}
+
+.package-card.featured {
+  border:2px solid var(--gold);
+  transform:translateY(-8px);
+}
+
+.package-label {
+  color:#a47a1d;
+  font-size:11px;
+  letter-spacing:2px;
+  font-weight:bold;
+}
+
+.package-card h3 {
+  color:var(--navy);
+  font-family:Georgia,serif;
+  font-size:24px;
+  margin:12px 0;
+}
+
+.package-price {
+  font-size:25px;
+  font-weight:bold;
+  color:var(--navy);
+  margin:15px 0;
+}
+
+.package-price small {
+  display:block;
+  font-size:12px;
+  color:var(--muted);
+  font-weight:normal;
+}
+
+.package-card p {
+  color:var(--muted);
+  font-size:14px;
+}
+
+.package-features {
+  list-style:none;
+  margin:20px 0 25px;
+  font-size:13px;
+  color:#657084;
+  flex:1;
+}
+
+.package-features li {
+  padding:7px 0;
+  border-bottom:1px solid #f0ede6;
+}
+
+.package-features li:before {
+  content:"✓ ";
+  color:#b68a29;
+  font-weight:bold;
+}
+
+.package-card .button {
+  text-align:center;
+}
+
+/* GALLERY */
+
+.gallery {
+  background:var(--navy);
+  color:white;
+}
+
+.gallery .section-title h2 {color:white}
+.gallery .section-title p {color:#bdc6d5}
+
+.gallery-grid {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.gallery-item {
+  min-height:230px;
+  border:1px solid rgba(255,255,255,.15);
+  background:linear-gradient(145deg,#1b3154,#101c34);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  text-align:center;
+  padding:25px;
+  border-radius:5px;
+}
+
+.gallery-item span {
+  font-size:38px;
+  margin-bottom:12px;
+}
+
+.gallery-item h3 {
+  color:var(--gold-light);
+  font-family:Georgia,serif;
+  font-weight:normal;
+  font-size:21px;
+}
+
+.gallery-item p {
+  color:#c3cada;
+  font-size:12px;
+  margin-top:8px;
+}
+
+/* PROCESS */
+
+.steps {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.step {
+  text-align:center;
+  padding:20px;
+}
+
+.step-number {
+  width:52px;
+  height:52px;
+  margin:0 auto 18px;
+  border:1px solid var(--gold);
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  color:#a47a1d;
+  font-family:Georgia,serif;
+  font-size:20px;
+}
+
+.step h3 {
+  color:var(--navy);
+  font-family:Georgia,serif;
+  font-size:20px;
+}
+
+.step p {
+  color:var(--muted);
+  font-size:13px;
+  margin-top:8px;
+}
+
+/* COVERAGE */
+
+.coverage {
+  background:#eeeae0;
+  text-align:center;
+}
+
+.area-list {
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:13px;
+  margin-top:25px;
+}
+
+.area-list span {
+  background:white;
+  border:1px solid #e0d6bd;
+  padding:12px 22px;
+  color:var(--navy);
+  font-size:14px;
+  border-radius:30px;
+}
+
+/* BOOKING */
+
+.booking {
+  background:#fff;
+}
+
+.booking-box {
+  max-width:760px;
+  margin:auto;
+  background:var(--cream);
+  padding:40px;
+  border:1px solid #e8e3d8;
+  border-radius:6px;
+}
+
+.booking-box h3 {
+  font-family:Georgia,serif;
+  color:var(--navy);
+  font-size:28px;
+  margin-bottom:10px;
+}
+
+.booking-box p {
+  color:var(--muted);
+  font-size:14px;
+  margin-bottom:25px;
+}
+
+.booking-form {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:17px;
+}
+
+.form-group {
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+}
+
+.form-group.full {grid-column:1/-1}
+
+.form-group label {
+  color:var(--navy);
+  font-size:13px;
+  font-weight:bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width:100%;
+  padding:13px;
+  border:1px solid #ddd6c7;
+  background:white;
+  color:var(--text);
+  border-radius:4px;
+  font:inherit;
+  font-size:14px;
+}
+
+.form-group textarea {
+  min-height:100px;
+  resize:vertical;
+}
+
+.booking-form button {
+  border:0;
+  cursor:pointer;
+  font:inherit;
+  grid-column:1/-1;
+}
+
+/* CONTACT */
+
+.contact {
+  background:linear-gradient(135deg,#0b1730,#20395d);
+  color:white;
+  text-align:center;
+}
+
+.contact h2 {
+  font-family:Georgia,serif;
+  font-size:clamp(30px,5vw,45px);
+  font-weight:normal;
+  margin:15px 0;
+}
+
+.contact p {
+  color:#d1d9e5;
+  margin-bottom:28px;
+}
+
+/* FOOTER */
+
+footer {
+  background:#071123;
+  color:white;
+  padding:55px 0 25px;
+}
+
+.footer-grid {
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr;
+  gap:40px;
+  margin-bottom:35px;
+}
+
+.footer-logo {
+  width:180px;
+  height:auto;
+  max-height:125px;
+  object-fit:contain;
+  margin-bottom:15px;
+}
+
+footer h3 {
+  color:var(--gold-light);
+  font-family:Georgia,serif;
+  font-size:19px;
+  font-weight:normal;
+  margin-bottom:15px;
+}
+
+footer p,footer a {
+  color:#bdc6d5;
+  font-size:13px;
+}
+
+.footer-links {
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+.copyright {
+  text-align:center;
+  border-top:1px solid rgba(255,255,255,.1);
+  padding-top:22px;
+  color:#9ba8ba;
+  font-size:12px;
+}
+
+/* WHATSAPP */
+
+.whatsapp-float {
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  z-index:200;
+  background:#20bd70;
+  color:white;
+  padding:14px 21px;
+  border-radius:40px;
+  font-size:13px;
+  font-weight:bold;
+  box-shadow:0 5px 25px rgba(0,0,0,.2);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:800px) {
+  .nav-links {display:none}
+  .brand img {width:125px}
+
+  .hero {
+    min-height:560px;
+    padding:75px 0;
+  }
+
+  .about-grid {
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .services-grid,
+  .packages-grid,
+  .gallery-grid {
+    grid-template-columns:1fr;
+  }
+
+  .package-card.featured {transform:none}
+
+  .steps {grid-template-columns:repeat(2,1fr)}
+
+  .footer-grid {grid-template-columns:1fr}
+
+  section {padding:65px 0}
+
+  .booking-box {padding:25px 18px}
+}
+
+@media(max-width:480px) {
+  .nav-button {padding:9px 12px;font-size:11px}
+  .brand img {width:105px}
+  .booking-form {grid-template-columns:1fr}
+  .form-group.full {grid-column:auto}
+  .steps {grid-template-columns:1fr 1fr}
+  .button-outline {margin:12px 0 0}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#" aria-label="Vee-Ro Clean Home">
+        <img src="veero-logo.png" alt="Vee-Ro Clean Logo">
+      </a>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#packages">Packages</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <a class="nav-button" href="https://wa.me/60107640035" target="_blank" rel="noopener">Book Now ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="eyebrow">TRUE CARE. TRUE CLEAN.</div>
+
+      <h1>
+        A Cleaner Space.<br>
+        <span>A Better Living.</span>
+      </h1>
+
+      <p>
+        Professional cleaning solutions for homes and businesses.
+        We bring care, attention and a fresh touch to every space
+        we clean.
+      </p>
+
+      <a class="button" href="#booking">Book a Cleaning</a>
+      <a class="button button-outline" href="#services">Explore Services</a>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  PROFESSIONAL CARE &nbsp; | &nbsp; QUALITY CLEANING &nbsp; | &nbsp; CUSTOMER FOCUSED
+</div>
+
+<section id="about">
+  <div class="container about-grid">
+
+    <div class="about-visual">
+      <img src="veero-logo.png" alt="Vee-Ro Clean">
+    </div>
+
+    <div class="about-copy">
+      <div class="eyebrow">ABOUT VEE-RO CLEAN</div>
+
+      <h2>True Care Begins With a Clean Space.</h2>
+
+      <div class="gold-line"></div>
+
+      <p>
+        Vee-Ro Clean is a professional cleaning service dedicated
+        to helping homeowners and businesses enjoy cleaner,
+        fresher and more comfortable spaces.
+      </p>
+
+      <p>
+        From regular home cleaning to detailed spring cleaning
+        and post-renovation cleaning, we approach every job with
+        care and attention to detail.
+      </p>
+
+      <a class="button" href="#contact">Get to Know Us</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+
+    <div class="section-title">
+      <small>WHAT WE DO</small>
+      <h2>Our Cleaning Services</h2>
+      <p>Thoughtful cleaning solutions for every space.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon">🏠</div>
+        <h3>Basic Home Cleaning</h3>
+        <p>Keep your home neat, fresh and comfortable with our essential cleaning service.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">✨</div>
+        <h3>Spring Cleaning</h3>
+        <p>A more detailed cleaning session to refresh your home and reach areas that need extra attention.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🧽</div>
+        <h3>Detail Deep Cleaning</h3>
+        <p>Detailed cleaning for selected areas, surfaces and household spaces that require extra care.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🏗️</div>
+        <h3>Post-Renovation Cleaning</h3>
+        <p>Cleaning after renovation works to help prepare your property for its next chapter.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🌧️</div>
+        <h3>Flood Recovery Cleaning</h3>
+        <p>Basic cleanup support for affected homes in selected service areas. Scope is subject to inspection.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">🚗</div>
+        <h3>Car Porch Cleaning</h3>
+        <p>Refresh your porch and outdoor entrance with a focused cleaning service.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="packages">
+  <div class="container">
+
+    <div class="section-title">
+      <small>OUR PACKAGES</small>
+      <h2>Choose Your Cleaning Package</h2>
+      <p>Clear starting prices. Final quotation depends on property condition and scope.</p>
+    </div>
+
+    <div class="packages-grid">
+
+      <div class="package-card">
+        <div class="package-label">ESSENTIAL CARE</div>
+        <h3>Basic Cleaning</h3>
+        <div class="package-price">RM189</div>
+        <p>For everyday home cleanliness and maintenance.</p>
+        <ul class="package-features">
+          <li>General home cleaning</li>
+          <li>Dusting and wiping</li>
+          <li>Floor sweeping and mopping</li>
+          <li>Kitchen and bathroom cleaning</li>
+        </ul>
+        <a class="button" href="https://wa.me/60107640035?text=Hi%20Veero%20Clean%2C%20I%20am%20interested%20in%20Basic%20Cleaning." target="_blank" rel="noopener">Enquire Now</a>
+      </div>
+
+      <div class="package-card featured">
+        <div class="package-label">MOST POPULAR</div>
+        <h3>Spring Cleaning</h3>
+        <div class="package-price">From RM399</div>
+        <p>For a more detailed home refresh.</p>
+        <ul class="package-features">
+          <li>Detailed cleaning session</li>
+          <li>Dust and surface cleaning</li>
+          <li>Kitchen and bathroom attention</li>
+          <li>Floor and general area cleaning</li>
+          <li>Scope based on property size</li>
+        </ul>
+        <a class="button" href="https://wa.me/60107640035?text=Hi%20Veero%20Clean%2C%20I%20am%20interested%20in%20Spring%20Cleaning." target="_blank" rel="noopener">Enquire Now</a>
+      </div>
+
+      <div class="package-card">
+        <div class="package-label">SPECIALIST CARE</div>
+        <h3>Post-Renovation</h3>
+        <div class="package-price">From RM899</div>
+        <p>For properties after renovation works.</p>
+        <ul class="package-features">
+          <li>Post-renovation cleaning</li>
+          <li>Dust and residue removal</li>
+          <li>Surface cleaning</li>
+          <li>Property-based scope</li>
+          <li>Quotation based on inspection</li>
+        </ul>
+        <a class="button" href="https://wa.me/60107640035?text=Hi%20Veero%20Clean%2C%20I%20need%20a%20Post-Renovation%20Cleaning%20quotation." target="_blank" rel="noopener">Get a Quote</a>
+      </div>
+
+    </div>
+
+    <p style="text-align:center;color:#788397;font-size:12px;margin-top:25px">
+      Detail Deep Cleaning and other specialist services are available upon quotation.
+    </p>
+
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="container">
+
+    <div class="section-title">
+      <small>OUR WORK</small>
+      <h2>Clean Spaces. Better Living.</h2>
+      <p>Every space deserves thoughtful care and attention.</p>
+    </div>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item">
+        <span>🏡</span>
+        <h3>Home Cleaning</h3>
+        <p>Fresh and comfortable living spaces.</p>
+      </div>
+
+      <div class="gallery-item">
+        <span>✨</span>
+        <h3>Spring Cleaning</h3>
+        <p>A detailed refresh for your home.</p>
+      </div>
+
+      <div class="gallery-item">
+        <span>🧹</span>
+        <h3>After Renovation</h3>
+        <p>Preparing spaces for a fresh start.</p>
+      </div>
+
+    </div>
+
+    <p style="text-align:center;color:#bdc6d5;font-size:12px;margin-top:25px">
+      Actual project photos can be added to this gallery.
+    </p>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="section-title">
+      <small>OUR PROCESS</small>
+      <h2>How It Works</h2>
+      <p>Simple booking. Clear communication. Thoughtful service.</p>
+    </div>
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-number">01</div>
+        <h3>Enquire</h3>
+        <p>Tell us about your property and cleaning needs.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">02</div>
+        <h3>Quotation</h3>
+        <p>We review your requirements and provide a quotation.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">03</div>
+        <h3>Schedule</h3>
+        <p>Confirm your preferred service date and time.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-number">04</div>
+        <h3>Cleaning</h3>
+        <p>Our team carries out the agreed cleaning scope.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="coverage">
+  <div class="container">
+
+    <div class="section-title">
+      <small>OUR SERVICE AREAS</small>
+      <h2>Where We Operate</h2>
+      <p>Serving selected areas across the Klang Valley.</p>
+    </div>
+
+    <div class="area-list">
+      <span>Klang</span>
+      <span>Shah Alam</span>
+      <span>Puncak Alam</span>
+    </div>
+
+  </div>
+</section>
+
+<section class="booking" id="booking">
+  <div class="container">
+
+    <div class="section-title">
+      <small>MAKE AN ENQUIRY</small>
+      <h2>Book Your Cleaning Service</h2>
+      <p>Share your details and we'll connect through WhatsApp.</p>
+    </div>
+
+    <div class="booking-box">
+      <h3>Let's Get Started</h3>
+      <p>Fill in the details below to send your enquiry directly to Vee-Ro Clean.</p>
+
+      <form class="booking-form" id="bookingForm">
+
+        <div class="form-group">
+          <label for="customerName">Full Name</label>
+          <input id="customerName" type="text" placeholder="Your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="customerPhone">Phone Number</label>
+          <input id="customerPhone" type="tel" placeholder="Your phone number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="serviceType">Cleaning Service</label>
+          <select id="serviceType" required>
+            <option value="">Select service</option>
+            <option>Basic Cleaning</option>
+            <option>Spring Cleaning</option>
+            <option>Detail Deep Cleaning</option>
+            <option>Post-Renovation Cleaning</option>
+            <option>Flood Recovery Cleaning</option>
+            <option>Car Porch Cleaning</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="serviceDate">Preferred Date</label>
+          <input id="serviceDate" type="date" required>
+        </div>
+
+        <div class="form-group full">
+          <label for="propertyArea">Property Location</label>
+          <input id="propertyArea" type="text" placeholder="e.g. Shah Alam, Klang or Puncak Alam" required>
+        </div>
+
+        <div class="form-group full">
+          <label for="customerMessage">Additional Information</label>
+          <textarea id="customerMessage" placeholder="Property type, size or any special requirements"></textarea>
+        </div>
+
+        <button class="button" type="submit">Send Enquiry via WhatsApp ↗</button>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+
+    <div class="eyebrow">TRUE CARE. TRUE CLEAN.</div>
+
+    <h2>Let's Make Your Space Feel Fresh.</h2>
+
+    <p>
+      Have questions or need a cleaning quotation?
+      Our team is ready to assist.
+    </p>
+
+    <a class="button" href="https://wa.me/60107640035" target="_blank" rel="noopener">
+      Chat With Vee-Ro Clean ↗
+    </a>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+        <img class="footer-logo" src="veero-logo.png" alt="Vee-Ro Clean Logo">
+        <p>True Care. True Clean.</p>
+        <p>Professional cleaning solutions for homes and businesses.</p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <div class="footer-links">
+          <a href="#about">About Us</a>
+          <a href="#services">Our Services</a>
+          <a href="#packages">Packages</a>
+          <a href="#booking">Booking</a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Contact Us</h3>
+        <div class="footer-links">
+          <a href="https://wa.me/60107640035" target="_blank" rel="noopener">WhatsApp: 010-764 0035</a>
+          <p>Klang, Shah Alam & Puncak Alam</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 Vee-Ro Clean. All rights reserved.
+      <br>True Care. True Clean.
+    </div>
+
+  </div>
+</footer>
+
+<a class="whatsapp-float"
+   href="https://wa.me/60107640035"
+   target="_blank"
+   rel="noopener">
+   WhatsApp ↗
+</a>
+
+<script>
+document.getElementById("bookingForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("customerName").value.trim();
+  const phone = document.getElementById("customerPhone").value.trim();
+  const service = document.getElementById("serviceType").value;
+  const date = document.getElementById("serviceDate").value;
+  const location = document.getElementById("propertyArea").value.trim();
+  const message = document.getElementById("customerMessage").value.trim();
+
+  const text =
+    "Hi Vee-Ro Clean! I would like to make a cleaning enquiry.%0A%0A" +
+    "Name: " + encodeURIComponent(name) + "%0A" +
+    "Phone: " + encodeURIComponent(phone) + "%0A" +
+    "Service: " + encodeURIComponent(service) + "%0A" +
+    "Preferred Date: " + encodeURIComponent(date) + "%0A" +
+    "Location: " + encodeURIComponent(location) + "%0A" +
+    "Additional Information: " + encodeURIComponent(message);
+
+  window.open("https://wa.me/60107640035?text=" + text, "_blank");
+});
+</script>
+
+</body>
+</html>
